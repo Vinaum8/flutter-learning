@@ -1,5 +1,5 @@
-import 'package:estudos/pages/lista_grande.dart';
 import 'package:flutter/material.dart';
+import 'pages/home.dart';
 
 void main() => runApp(MyApp());
 
@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'App de Estudos',
-      home: ListaGigante(),      
+      home: Home(),      
       );
   }
 }
