@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+
+//variaveis globais
+var countermanual=150;
+
 class ListaGigante extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -14,14 +18,16 @@ class ListaGigante extends StatelessWidget {
 }
 
 List<String> getListElements() {
-  var items = List<String>.generate(1000, (counter) => "Item $counter");
+  // Caso queira aumentar a lista é só aumentar o "countemanual" no inicio do código.
+  var items = List<String>.generate(countermanual, (counter) => "Item $counter");
   return items;
 }
 
 Widget getListView() {
   var listItems = getListElements();
 
-  var listView = ListView.builder(itemBuilder: (context, index) {
+  // Caso queira aumentar a lista é só aumentar o "countemanual" no inicio do código.
+  var listView = ListView.builder(itemCount: countermanual, itemBuilder: (context, index) {
     return ListTile(
       leading: Icon(Icons.keyboard_arrow_right),
       subtitle: Text("eh nozes"),
