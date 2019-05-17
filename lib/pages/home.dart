@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-
-import 'lista_grande.dart';
+import 'content/dropbuttom.dart';
+import 'content/lista_grande.dart';
+import 'content/viagemcity.dart';
 
 class Home extends StatelessWidget {
   @override
@@ -22,11 +23,11 @@ class Home extends StatelessWidget {
             margin: EdgeInsets.only(top: 20),
             alignment: Alignment.center,
             child: Container(
-              width: 200,
+              width: 250,
               child: FlatButton(
                 color: Colors.red,
                 textColor: Colors.white,
-                child: Text("Lista Gigante - Seção 4.14"),
+                child: Text("Lista Gigante - Seção 4, Aula 14"),
                 onPressed: () {
                   Navigator.push(
                     context,
@@ -40,11 +41,47 @@ class Home extends StatelessWidget {
           Container(
             alignment: Alignment.center,
             child: Container(
-              width: 200,
+              width: 250,
               child: FlatButton(
                 color: Colors.red,
                 textColor: Colors.white,
-                child: Text("Outras Parada"),
+                child: Text("Statefull Widgets - Seção 5, Aula 18"),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (BuildContext context) => ViagemCity()),
+                  );
+                },
+              ),
+            ),
+          ),
+          Container(
+            alignment: Alignment.center,
+            child: Container(
+              width: 250,
+              child: FlatButton(
+                color: Colors.red,
+                textColor: Colors.white,
+                child: Text("DropdownButtom - Seção 5, Aula 19"),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (BuildContext context) => DropButtom()),
+                  );
+                },
+              ),
+            ),
+          ),
+          Container(
+            alignment: Alignment.center,
+            child: Container(
+              width: 250,
+              child: FlatButton(
+                color: Colors.red,
+                textColor: Colors.white,
+                child: Text("Calculadora - Seção 6, Aula 20"),
                 onPressed: () {},
               ),
             ),
@@ -52,31 +89,7 @@ class Home extends StatelessWidget {
           Container(
             alignment: Alignment.center,
             child: Container(
-              width: 200,
-              child: FlatButton(
-                color: Colors.red,
-                textColor: Colors.white,
-                child: Text("Outras Parada"),
-                onPressed: () {},
-              ),
-            ),
-          ),
-          Container(
-            alignment: Alignment.center,
-            child: Container(
-              width: 200,
-              child: FlatButton(
-                color: Colors.red,
-                textColor: Colors.white,
-                child: Text("Outras Parada"),
-                onPressed: () {},
-              ),
-            ),
-          ),
-          Container(
-            alignment: Alignment.center,
-            child: Container(
-              width: 200,
+              width: 250,
               child: FlatButton(
                 color: Colors.red,
                 textColor: Colors.white,
