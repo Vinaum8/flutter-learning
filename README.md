@@ -1,8 +1,6 @@
 # estudos
 Aprendendo a desenvolver aplicativos e trabalhar com versionamento com o Git.
 
-## Getting Started
-
 Aplicativo desenvolvivo com ajuda de diversas comunidades do telegram.
 https://t.me/flutterando
 https://t.me/flutterbrasil

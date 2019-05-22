@@ -13,7 +13,7 @@ class _ViagemCityState extends State<ViagemCity> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.red,
+        // backgroundColor: Colors.red,
         title: Text("Aula de Statefull Widget"),
       ),
       body: Container(
